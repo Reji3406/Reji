@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);  
+
+        System.out.println("Enter the no. of seats");
+        int size = data.nextInt(); 
+        data.nextLine();
+
+        String[] seats = new String[size];  
+
+        System.out.println("Enter the seat numbers");
+        for (int i = 0; i < size; i++) {
+            seats[i] = data.nextLine();  
+        }
+        
+        System.out.println("Enter the name");
+        for (int i = 0; i < size; i++) {
+            seats[i] = data.nextLine();  
+        }
+         
+    }
+}
