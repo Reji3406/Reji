@@ -1,4 +1,3 @@
-PROGRAM 1:
 import java.util.Scanner;
 
 class Main {
@@ -10,7 +9,7 @@ class Main {
         System.out.println("Enter the Ending number");
         int EN = data.nextInt();
         
-        int RN = SN +(int) Math.random() * ((EN-SN)+1);
+        int RN = SN +(int) (Math.random() * ((SN+EN)+1));
         System.out.println(RN);
     }
 }
