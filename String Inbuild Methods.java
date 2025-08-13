@@ -230,3 +230,67 @@ class Main{
         System.out.println(x.startsWith("he"));
     }
 }
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        String name="helloworld";
+        CharSequence b=name.subSequence(0,5);
+        CharSequence a=name.subSequence(5,10);
+        System.out.println(b+" "+a);
+        
+    }
+}
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args){
+        Scanner data = new Scanner(System.in);
+        String x = "Helloworld";
+        int y = 5;
+        String a = x.substring(0,y);
+        String b = x.substring(y);
+        
+        System.out.println(a+" "+b);
+        
+        
+    }
+}
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        String x="hello_world";
+        char[] y = x.toCharArray();
+        System.out.println(y[0]);
+        
+    }
+}
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+        String x = data.nextLine();
+        char[] y = x.toCharArray();
+        for(char s:y){  
+            System.out.println(s);
+        }
+        System.out.println(x.toLowerCase());
+        System.out.println(x.toUpperCase());
+        System.out.println(x.toString());
+    }
+}
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+        String x = data.nextLine();
+
+        System.out.println(x.trim());
+        System.out.println(String.valueOf(x));
+        System.out.println(String.valueOf(true));
+    }
+}
