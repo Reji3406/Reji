@@ -80,3 +80,18 @@ class Main {
         
     }
 }
+
+import java.util.Scanner;
+
+class Main{
+    public static void main(String[] args){
+        Scanner data = new Scanner(System.in);
+        String a = "New world";
+        String y = "_Hello_World";
+        String x = "Hello|World|Java";
+        System.out.println("Hello".matches(x));
+        System.out.println("World".matches(x));
+        System.out.println("JavaScript".matches(x));
+        System.out.println(y.regionMatches(7,a,4,5));
+    }
+}
