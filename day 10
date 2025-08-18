@@ -1,0 +1,68 @@
+class Vehicle{
+    public void drive(){
+        System.out.println("drive");
+    }
+}
+class Bike extends Vehicle{
+    @Override
+    public void drive(){
+        System.out.println("Driving Bike");
+    }
+}
+class car extends Vehicle{
+    @Override
+    public void drive(){
+        System.out.println("Driving car");
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+        Vehicle v = new Bike();
+        v.drive();
+        Vehicle a = new car();
+        a.drive();
+        Vehicle b = new Vehicle();
+        b.drive();
+    }
+}
+
+
+
+
+class Payment{
+    public void Transaction(){
+        System.out.println("Payment");
+    }
+}
+class Phonepay extends Payment{
+    @Override
+    public void Transaction(){
+        System.out.println("Phonepay Payment");
+    }
+}
+class Gpay extends Payment{
+    @Override
+    public void Transaction(){
+        System.out.println("Gpay Payment");
+    }
+}
+class UPI extends Payment{
+    @Override
+    public void Transaction(){
+        System.out.println("UPI Payment");
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+        Payment v = new Phonepay();
+        v.Transaction();
+        Payment a = new Gpay();
+        a.Transaction();
+        Payment b = new UPI();
+        b.Transaction();
+        Payment c = new Payment();
+        c.Transaction();
+    }
+}
